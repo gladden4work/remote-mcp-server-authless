@@ -10,8 +10,13 @@
 	"compatibility_flags": ["nodejs_compat"],
 	"migrations": [
 		{
-			"new_sqlite_classes": ["Context7MCP"],
-			"tag": "v1"
+			"tag": "v1",
+			"new_sqlite_classes": ["MyMCP"]
+		},
+		{
+			"tag": "v2", 
+			"delete_classes": ["MyMCP"],
+			"new_sqlite_classes": ["Context7MCP"]
 		}
 	],
 	"durable_objects": {
