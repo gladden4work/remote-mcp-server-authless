@@ -15,8 +15,12 @@
 		},
 		{
 			"tag": "v2", 
-			"delete_classes": ["MyMCP"],
-			"new_sqlite_classes": ["Context7MCP"]
+			"renamed_classes": [
+				{
+					"from": "MyMCP",
+					"to": "Context7MCP"
+				}
+			]
 		}
 	],
 	"durable_objects": {
