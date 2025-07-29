@@ -1,0 +1,15 @@
+name = "mcp-aggregator-server"
+main = "src/index.ts"
+compatibility_date = "2024-07-29"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+name = "mcp-aggregator-server"
+
+[env.staging]
+name = "mcp-aggregator-server-staging"
+
+# Environment variables for server URLs (optional, defaults will be used)
+[vars]
+# EXISTING_MCP_SERVER_URL = "https://remote-mcp-server-authless.gladden4work.workers.dev"
+# ATLASSIAN_MCP_SERVER_URL = "https://atlassian-mcp-server.gladden4work.workers.dev"
