@@ -597,6 +597,10 @@ ${examples}
 	}
 }
 
+// Temporary alias for migration - this allows the migration to work
+// We export both the old name (MyMCP) and new name (Context7MCP)
+export const MyMCP = Context7MCP;
+
 export default {
 	fetch(request: Request, env: Env, ctx: ExecutionContext) {
 		const url = new URL(request.url);
